@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            background: url(images/bg.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+            font-family: sans-serif;
+        }
+
+        .navbar {
+            width: 86%;
+            display: flex;
+            margin: auto;
+            padding: 15px 0;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar .logo {
+            width: 160px;
+            cursor: pointer;
+            margin-top: -3%;
+            margin-left: -2%;
+        }
+
+        ul {
+            margin-top: -4%;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 16px;
+
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: darkslategray;
+            transition: 0.4s ease-in-out;
+            font-weight: bold;
+            margin-top: -3%;
+        }
+
+        ul li a:hover {
+            color: rgb(230, 104, 59);
+
+        }
+
+        .info {
+            margin-left: 7%;
+            margin-top: 3%;
+        }
+
+        .info h1 {
+            font-size: 50px;
+            color: rgb(36, 32, 30);
+        }
+
+        .info h3 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 24px;
+
+        }
+
+        .info span {
+            color: rgb(230, 104, 59);
+        }
+
+        .info a {
+            text-decoration: none;
+            color: #fff;
+            background: rgb(36, 32, 30);
+            margin: 26px 0;
+            padding: 10px 18px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .info a:hover {
+            background: rgb(59, 174, 209);
+        }
+
+        .image {
+            width: 30%;
+            height: 60%;
+            position: absolute;
+            right: 100px;
+            bottom: 0;
+        }
+
+        .image img {
+            position: absolute;
+            margin-bottom: 0.4%;
+            margin-left: 40%;
+            height: 100%;
+            left: 20%;
+            transform: translate(-50%);
+            bottom: 0;
+            transition: left 4s ease;
+        }
+
+        .image:hover .me {
+            left: 50%;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .icons ion-icon {
+            margin-left: 7%;
+            color: #000;
+            margin-right: -60px;
+            font-size: 40px;
+            transition: .4s ease;
+        }
+
+        .icons ion-icon:hover {
+            color: rgb(59, 174, 209);
+        }
+
+        button {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 5px solid #000;
+            color: #000;
+            background: #009688;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        h4 {
+            background: transparent;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.4s ease;
+
+        }
+
+        button:hover span {
+            width: 100%;
+
+        }
+
+        button:hover {
+            border: none;
+        }
+
+        .form {
+            width: 165px;
+            height: 375px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+            position: absolute;
+            top: 261.4px;
+            left: 731.4px;
+            border-radius: 1px;
+            padding: 10px;
+        }
+
+        .form h2 {
+            width: 165px;
+            height: 35px;
+            text-align: center;
+            font-family: sans-serif;
+            color: #000;
+            background-color: #009688;
+            border-radius: 25px 0;
+
+
+        }
+
+        .form input {
+            width: 165px;
+            height: 35px;
+            background: transparent;
+            background-color: #ff7200;
+            border-bottom: 1px solid #ff7200;
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            font-family: sans-serif;
+            font-family: sans-serif;
+            border-radius: 25px 0;
+
+        }
+
+        .form input:focus {
+            outline: none;
+
+        }
+
+        ::placeholder {
+            color: #000;
+        }
+
+        h5 {
+            color: #ff7200;
+            background-color: aqua;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        .h6 a {
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img src="images/a56bd713c24f4d41b85eac0e843c519f.png" class="logo">
+
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">MY WORK</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h3>Hi, I'm <span>Abdul Quddus</span></h3>
+            <h1><span>W</span>EB <span>D</span>ESIGNER:-<span> <br>&</span> <span>T</span>EACHER:-</h1>
+            <h3>Web designer and developoer from Karachi,Pakistan.
+                I create<br>websites to do busineseses do better online.<br>
+                And also teach tuition for matric student.</h3>
+            <a href="#">Hire Me</a>
+            <div>
+                <button type="button">
+                    <h4></h4>For Details
+                </button>
+                <button type="button">
+                    <h4></h4>Join Us
+                </button>
+                <div class="form">
+                    <h2>Please Login</h2>
+                    <input type="email" name="email" placeholder="Enter Your Email">
+                    <input type="password" name="password" placeholder="Enter Your Password">
+                    <h6><a href="submit">Submit</a></h6>
+                    <P>Please <br> sign <br> here <br> if <br>you <br> have <br> no <br> account
+                    <h5> thank you!</h5>
+                    </P>
+                </div>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="images/IMG_20230531_001643.jpg" class="me">
+        </div>
+        <div class="icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
